@@ -81,14 +81,14 @@ Designating any columns as such will obviously prevent exact round-tripping of a
 
 .. _visit-catalogs:
 
-Visit Catalogs
-==============
+Image Metadata Catalogs
+=======================
 
-Science Pipelines code does not currently generate visit and coadd catalogs, including metadata about each visit or coadd image.
+Science Pipelines code does not currently generate visit metadata or coadd metadata catalogs.
 Instead, this information is persisted per-image in Processed Visit Image or coadd FITS files as headers or as FITS binary tables in additional extensions.
-In some cases, a subset of what should be in the visit catalog is present in the Butler registry, loaded from raw image header information during the repository ingest process (performed by different code in :py:mod:`lsst.daf.ingest` from the database loading code).
+In some cases, a subset of what should be in the visit metadata catalog is present in the Butler registry, loaded from raw image header information during the repository ingest process (performed by different code in :py:mod:`lsst.daf.ingest` from the database loading code).
 
-Database loading code should expect to be able to load visit catalog contents from both image files and separate persisted :py:mod:`lsst.afw.table` objects.
+Database loading code should expect to be able to load visit metadata catalog contents from both image files and separate persisted :py:mod:`lsst.afw.table` objects.
 Some image metadata is expected to be stored as BLOBs or as pointers to separate files (e.g. containing persisted models) rather than explicit columns.
 
 .. _integration-plans:
