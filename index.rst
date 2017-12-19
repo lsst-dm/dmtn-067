@@ -88,10 +88,12 @@ Image Metadata Catalogs
 
 Science Pipelines code does not currently generate visit metadata or coadd metadata catalogs.
 Instead, this information is persisted per-image in Processed Visit Image or coadd FITS files as headers or as FITS binary tables in additional extensions.
-In some cases, a subset of what should be in the visit metadata catalog is present in the Butler registry, loaded from raw image header information during the repository ingest process (performed by different code in :py:mod:`lsst.daf.ingest` from the database loading code).
+In some cases, a subset of what should be in the visit metadata catalog is present in the Gen2 Butler registry, loaded from raw image header information during the repository ingest process (performed by different code in :py:mod:`lsst.daf.ingest` from the database loading code).
 
 Database loading code should expect to be able to load visit metadata catalog contents from both image files and separate persisted :py:mod:`lsst.afw.table` objects.
 Some image metadata is expected to be stored as BLOBs or as pointers to separate files (e.g. containing persisted models) rather than explicit columns.
+
+The Gen3 Butler will need to use image metadata catalogs, including original, revised, and computed values and including both machine- and human-generated quality indicators, to perform its functions.
 
 .. _integration-plans:
 
