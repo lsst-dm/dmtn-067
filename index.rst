@@ -6,7 +6,9 @@
 
 .. _data-products-definition:
 
-Discussions at and subsequent to the `LSST Science Platform Workshop in December, 2017 <https://confluence.lsstcorp.org/x/Z4EWB#id-2017-12-06NotesbyKTL-DataModel>` have produced a working consensus for how LSST DM will handle catalog data, including metadata describing its contents.
+Discussions at and subsequent to the `LSST Science Platform Workshop`_ in December, 2017 have produced a working consensus for how LSST DM will handle catalog data, including metadata describing its contents.
+
+.. _LSST Science Platform Workshop: https://confluence.lsstcorp.org/x/Z4EWB#id-2017-12-06NotesbyKTL-DataModel
 
 Data Products Definition
 ========================
