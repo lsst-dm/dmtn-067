@@ -14,7 +14,7 @@ Catalog Data Model
 DMTN-067
 ========
 
-How catalog content and metadata is and will be handled
+How catalog content and metadata is and will be handled.
 
 **Links:**
 
